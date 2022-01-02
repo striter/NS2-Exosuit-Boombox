@@ -42,23 +42,33 @@ end
 
 if Server then
 
-     function Exo:SelectTrack(track)
-        if not self.selectedTrackIndex then
-            self.selectedTrackIndex = 0
-        end
+   function Exo:SelectTrack(track)
+      if not self.selectedTrackIndex then
+          self.selectedTrackIndex = 0
+      end
 
-        if track == nil  or (self.selectedTrack and self.selectedTrack ~= track) then
-            self.selectedTrackIndex = 0
-        end
-        self.selectedTrack = track
+      if track == nil  or (self.selectedTrack and self.selectedTrack ~= track) then
+          self.selectedTrackIndex = 0
+      end
+      self.selectedTrack = track
 
-        if self.selectedTrack then
-          self.selectedTrackIndex = self.selectedTrackIndex + 1
-          if  self.selectedTrackIndex > #track then
-              self.selectedTrackIndex = 1
-          end
+      if self.selectedTrack then
+        self.selectedTrackIndex = self.selectedTrackIndex + 1
+        if  self.selectedTrackIndex > #track then
+            self.selectedTrackIndex = 1
         end
       end
+    end
+
+    function Exo:ClearSound()
+      if self.exoMusicId then
+          local musicEntity = Shared.GetEntity(self.exoMusicId)
+          if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() then
+              musicEntity:Stop()
+          end
+          self.exoMusicId = nil
+      end
+    end
 
     local originalHandleButtons = Exo.HandleButtons
     function Exo:HandleButtons(input)
@@ -68,15 +78,7 @@ if Server then
             self.pressingMusicButtons = true
 
             //Clear previous sound
-            if self.exoMusicId then
-                local musicEntity = Shared.GetEntity(self.exoMusicId)
-                if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() then
-                    musicEntity:Stop()
-                    self.exoMusicId = nil
-                    self:SetRelevancyDistance(kMaxRelevancyDistance)
-                end
-                self.exoMusicId = nil
-            end
+            -- self:ClearSound()
 
             //Do track selection
             if bit.band(input.commands,Move.Weapon1) ~= 0 then
@@ -87,27 +89,25 @@ if Server then
                 self:SelectTrack(SONG)
             end
 
-            if bit.band(input.commands,Move.Weapon3) ~= 0 then
-                self:SelectTrack(nil)
-            end
+            -- if bit.band(input.commands,Move.Weapon3) ~= 0 then
+            --     self:SelectTrack(nil)
+            -- end
 
             if bit.band(input.commands,Move.Weapon4) ~= 0 then
                 self:SelectTrack(nil)
             end
 
             if self.selectedTrack then
-
               local exoMusicPlaying = Server.CreateEntity(SoundEffect.kMapName)
               exoMusicPlaying:SetAsset(self.selectedTrack[self.selectedTrackIndex])
               --exoMusicPlaying:SetOrigin(self:GetOrigin())
-              self.exoMusicVolume = 0.2
+              self.exoMusicVolume = 0.25
               exoMusicPlaying:SetVolume(self.exoMusicVolume)
               --self.exoMusicPlaying.assetLength = -1
               exoMusicPlaying:SetRelevancyDistance(Math.infinity)
               self:SetRelevancyDistance(Math.infinity)
               exoMusicPlaying:SetParent(self)
               exoMusicPlaying:Start()
-
               self.exoMusicId = exoMusicPlaying:GetId()
             end
             --[[

@@ -85,23 +85,23 @@ function GUIExoEject:Initialize()
     self.button2:SetIsVisible(true)
 
 
-    self.button3 = GUICreateButtonIcon("Weapon3")
-    self.button3:SetAnchor(GUIItem.Left, GUIItem.Bottom)
-    self.button3:SetPosition(Vector(420, -120, 0))
-
-    self.text3 = GetGUIManager():CreateTextItem()
-    self.text3:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
-    self.text3:SetTextAlignmentX(GUIItem.Align_Center)
-    self.text3:SetTextAlignmentY(GUIItem.Align_Center)
-    self.text3:SetText("?")
-    self.text3:SetPosition(kTextOffset)
-    self.text3:SetScale(GetScaledVector())
-    self.text3:SetFontName(kFontName)
-    GUIMakeFontScale(self.text3)
-    self.text3:SetColor(kMarineFontColor)
-
-    self.button3:AddChild(self.text3)
-    self.button3:SetIsVisible(true)
+    -- self.button3 = GUICreateButtonIcon("Weapon3")
+    -- self.button3:SetAnchor(GUIItem.Left, GUIItem.Bottom)
+    -- self.button3:SetPosition(Vector(420, -120, 0))
+    --
+    -- self.text3 = GetGUIManager():CreateTextItem()
+    -- self.text3:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
+    -- self.text3:SetTextAlignmentX(GUIItem.Align_Center)
+    -- self.text3:SetTextAlignmentY(GUIItem.Align_Center)
+    -- self.text3:SetText("?")
+    -- self.text3:SetPosition(kTextOffset)
+    -- self.text3:SetScale(GetScaledVector())
+    -- self.text3:SetFontName(kFontName)
+    -- GUIMakeFontScale(self.text3)
+    -- self.text3:SetColor(kMarineFontColor)
+    --
+    -- self.button3:AddChild(self.text3)
+    -- self.button3:SetIsVisible(true)
 
     self.button4 = GUICreateButtonIcon("Weapon4")
     self.button4:SetAnchor(GUIItem.Left, GUIItem.Bottom)
@@ -135,9 +135,9 @@ function GUIExoEject:Uninitialize()
     if self.button2 then
         GUI.DestroyItem(self.button2)
     end
-    if self.button3 then
-        GUI.DestroyItem(self.button3)
-    end
+    -- if self.button3 then
+    --     GUI.DestroyItem(self.button3)
+    -- end
     if self.button4 then
         GUI.DestroyItem(self.button4)
     end
