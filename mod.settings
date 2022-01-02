@@ -1,7 +1,8 @@
 name        = "CN Exosuit BoomBox"
-source_dir  = "source/"
-output_dir  = "output/"
+source_dir  = "source"
+output_dir  = "output"
 description = [=[Some rewrite of Nin's exoboombox mod,basiclly for lua learning,also intented to add some custom tracks.]=]
 image       = "preview.jpg"
 tag_modtype = ""
 tag_support = ""
+publish_id = 2704680734
