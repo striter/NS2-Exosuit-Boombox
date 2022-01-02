@@ -47,12 +47,12 @@ if Server then
           self.selectedTrackIndex = 0
       end
 
-      if track == nil  or (self.selectedTrack and self.selectedTrack ~= track) then
+      if track == nil  or (self.selectedTrack ~= nil and self.selectedTrack ~= track) then
           self.selectedTrackIndex = 0
       end
       self.selectedTrack = track
 
-      if self.selectedTrack then
+      if self.selectedTrack ~= nil then
         self.selectedTrackIndex = self.selectedTrackIndex + 1
         if  self.selectedTrackIndex > #track then
             self.selectedTrackIndex = 1
@@ -61,13 +61,6 @@ if Server then
     end
 
     function Exo:ClearSound()
-      if self.exoMusicId then
-          local musicEntity = Shared.GetEntity(self.exoMusicId)
-          if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() then
-              musicEntity:Stop()
-          end
-          self.exoMusicId = nil
-      end
     end
 
     local originalHandleButtons = Exo.HandleButtons
@@ -78,7 +71,13 @@ if Server then
             self.pressingMusicButtons = true
 
             //Clear previous sound
-            -- self:ClearSound()
+            if self.exoMusicId ~= nil then
+                local musicEntity = Shared.GetEntity(self.exoMusicId)
+                if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() then
+                    musicEntity:Stop()
+                end
+                self.exoMusicId = nil
+            end
 
             //Do track selection
             if bit.band(input.commands,Move.Weapon1) ~= 0 then
@@ -97,11 +96,11 @@ if Server then
                 self:SelectTrack(nil)
             end
 
-            if self.selectedTrack then
+            if self.selectedTrack ~= nil then
               local exoMusicPlaying = Server.CreateEntity(SoundEffect.kMapName)
               exoMusicPlaying:SetAsset(self.selectedTrack[self.selectedTrackIndex])
               --exoMusicPlaying:SetOrigin(self:GetOrigin())
-              self.exoMusicVolume = 0.25
+              self.exoMusicVolume = 0.20
               exoMusicPlaying:SetVolume(self.exoMusicVolume)
               --self.exoMusicPlaying.assetLength = -1
               exoMusicPlaying:SetRelevancyDistance(Math.infinity)
@@ -194,7 +193,7 @@ function Exo:OnDestroy()
     self.selectedTrack=nil
     self.selectedTrackIndex = 0
 
-    if self.exoMusicId then
+    if self.exoMusicId ~= nil then
         local musicEntity = Shared.GetEntity(self.exoMusicId)
         if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() and musicEntity.Stop then
             musicEntity:Stop()
