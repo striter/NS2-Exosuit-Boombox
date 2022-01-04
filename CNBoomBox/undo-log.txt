@@ -1,0 +1,264 @@
+16:55:52 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+16:56:55 ..\..\src\simpleeventcontroller.cpp:1420 IM: Set Resample Mode
+16:56:56 ..\..\src\simpleeventcontroller.cpp:1420 IM: Set Resample Mode
+17:04:18 ..\..\src\simpleeventcontroller.cpp:960 ID: Set Playlist Behavior
+17:04:19 ..\..\src\simpleeventcontroller.cpp:960 ID: Set Playlist Behavior
+17:04:20 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:04:21 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:04:21 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:04:39 ..\..\src\propertyeditor.cpp:3444 EQ: Set Max Playbacks
+17:04:39 ..\..\src\propertyeditor.cpp:3444 EQ: Set Max Playbacks
+17:04:39 ..\..\src\propertyeditor.cpp:3444 EQ: Set Max Playbacks
+17:04:39 ..\..\src\propertyeditor.cpp:3444 EQ: Set Max Playbacks
+17:04:41 ..\..\src\propertyeditor.cpp:3444 EQ: Set Max Playbacks
+17:04:41 ..\..\src\propertyeditor.cpp:3444 EQ: Set Max Playbacks
+17:04:54 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:55 ..\..\src\simpleeventcontroller.cpp:1470 IN: Adjust Automatic Sample Rate
+17:04:56 ..\..\src\simpleeventcontroller.cpp:1420 IM: Set Resample Mode
+17:04:57 ..\..\src\simpleeventcontroller.cpp:1420 IM: Set Resample Mode
+17:07:05 ..\..\src\propertyeditor.cpp:4234 ER: Set Mode
+17:07:06 ..\..\src\propertyeditor.cpp:4234 ER: Set Mode
+17:07:08 ..\..\src\propertyeditor.cpp:4234 ER: Set Mode
+17:07:16 ..\..\src\propertyeditor.cpp:4234 ER: Set Mode
+17:07:20 ..\..\src\propertyeditor.cpp:4234 ER: Set Mode
+17:21:43 c:\anthill_jobs\job510040\fmod4\tools\fmod_designer\src\eventform.ui.h:2922 HC: Sort Alphabetically
+17:23:57 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:23:58 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:23:59 ..\..\src\simpleeventcontroller.cpp:652 HW: Set Play Count
+17:23:59 ..\..\src\simpleeventcontroller.cpp:652 HW: Set Play Count
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:02 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:03 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:04 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:05 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:24:06 ..\..\src\simpleeventcontroller.cpp:933 IC: Set Max Grain Interval
+17:31:34 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:31:35 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:31:37 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:31:38 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:31:39 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode
+17:31:41 ..\..\src\simpleeventcontroller.cpp:606 HV: Set Playback Mode

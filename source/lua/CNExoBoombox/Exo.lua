@@ -1,24 +1,43 @@
 
 local ost = {
-  PrecacheAsset("sound/CNBoomBox.fev/SND/EXO"),
-  PrecacheAsset("sound/CNBoomBox.fev/SND/2077"),
-  PrecacheAsset("sound/CNBoomBox.fev/SND/COD"),
-  PrecacheAsset("sound/CNBoomBox.fev/SND/HL2"),
-  PrecacheAsset("sound/CNBoomBox.fev/SND/HLA"),
-  PrecacheAsset("sound/CNBoomBox.fev/SND/HALO"),
-  PrecacheAsset("sound/CNBoomBox.fev/SND/GTAIV"),
-  PrecacheAsset("sound/CNBoomBox.fev/SND/AWDR"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/2077"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/COD"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/HL2"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/HLA"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/HALO"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/GTAIV"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/AWDR"),
 }
 
 local SONG =
 {
-    PrecacheAsset("sound/CNBoomBox.fev/SND/LowRider"),
-    PrecacheAsset("sound/CNBoomBox.fev/SND/HowYouLikeMeNow"),
-    PrecacheAsset("sound/CNBoomBox.fev/SND/AfterTheDisco"),
-    PrecacheAsset("sound/CNBoomBox.fev/SND/TheSetup"),
-    PrecacheAsset("sound/CNBoomBox.fev/SND/PolishGirl"),
-    PrecacheAsset("sound/CNBoomBox.fev/SND/CaughtInADaze"),
-    PrecacheAsset("sound/CNBoomBox.fev/SND/Valkyrie"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/LowRider"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/HowYouLikeMeNow"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/AfterTheDisco"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/TheSetup"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/PolishGirl"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/CaughtInADaze"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/Valkyrie"),
+}
+
+local TwoDimension =
+{
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/DaMeDaNe"),
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/Monster"),
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/LoveLoop"),
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/RGB"),
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/Night"),
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/Devilman"),
+}
+
+local Otto =
+{
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Nobody"),
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Break"),
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Night"),
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Reflection"),
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/War"),
 }
 
 local networkVars =
@@ -88,11 +107,15 @@ if Server then
                 self:SelectTrack(SONG)
             end
 
-            -- if bit.band(input.commands,Move.Weapon3) ~= 0 then
-            --     self:SelectTrack(nil)
-            -- end
+            if bit.band(input.commands,Move.Weapon3) ~= 0 then
+                self:SelectTrack(TwoDimension)
+            end
 
             if bit.band(input.commands,Move.Weapon4) ~= 0 then
+                self:SelectTrack(Otto)
+            end
+
+            if bit.band(input.commands,Move.Weapon5) ~= 0 then
                 self:SelectTrack(nil)
             end
 
