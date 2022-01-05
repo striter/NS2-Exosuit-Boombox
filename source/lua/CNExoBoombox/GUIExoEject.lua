@@ -6,6 +6,7 @@
 --
 -- ========= For more information, visit us at http://www.unknownworlds.com =====================
 
+
 local kButtonPos
 local kTextOffset
 
@@ -14,7 +15,6 @@ local kFontName = Fonts.kAgencyFB_Small
 class 'GUIExoEject' (GUIScript)
 
 local function UpdateItemsGUIScale(self)
-    kButtonPos = GUIScale(Vector(180, -120, 0))
     kTextOffset = GUIScale(Vector(0, 20, 0))
 end
 
@@ -25,31 +25,33 @@ function GUIExoEject:OnResolutionChanged(oldX, oldY, newX, newY)
     self:Initialize()
 end
 
+local kBackgroundName=PrecacheAsset("ui/boomboxBG.dds")
+
 function GUIExoEject:Initialize()
 
     UpdateItemsGUIScale(self)
+    
+    self.background = GetGUIManager():CreateGraphicItem()
+    self.background:SetSize(Vector(300,70, 0))
+    self.background:SetTexture(kBackgroundName)
+    self.background:SetBlendTechnique( GUIItem.Add )
+    self.background:SetAnchor( GUIItem.Left, GUIItem.Bottom)
+    self.background:SetPosition(Vector(105,-127,0))
 
-    self.button = GUICreateButtonIcon("Drop")
-    self.button:SetAnchor(GUIItem.Left, GUIItem.Bottom)
-    self.button:SetPosition(kButtonPos)
-
-    self.text = GetGUIManager():CreateTextItem()
-    self.text:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
-    self.text:SetTextAlignmentX(GUIItem.Align_Center)
-    self.text:SetTextAlignmentY(GUIItem.Align_Center)
-    self.text:SetText(Locale.ResolveString("EJECT_FROM_EXO"))
-    self.text:SetPosition(kTextOffset)
-    self.text:SetScale(GetScaledVector())
-    self.text:SetFontName(kFontName)
-    GUIMakeFontScale(self.text)
-    self.text:SetColor(kMarineFontColor)
-
-    self.button:AddChild(self.text)
-    self.button:SetIsVisible(false)
+    self.title = GetGUIManager():CreateTextItem()
+    self.title:SetAnchor(GUIItem.Left, GUIItem.Bottom)
+    self.title:SetPosition(Vector(255,-135,0))
+    self.title:SetTextAlignmentX(GUIItem.Align_Center)
+    self.title:SetTextAlignmentY(GUIItem.Align_Max)
+    self.title:SetText("Boombox Center Control")
+    self.title:SetScale(GetScaledVector())
+    self.title:SetFontName(kFontName)
+    GUIMakeFontScale(self.title)
+    self.title:SetColor(kMarineFontColor)
 
     self.button1 = GUICreateButtonIcon("Weapon1")
     self.button1:SetAnchor(GUIItem.Left, GUIItem.Bottom)
-    self.button1:SetPosition(Vector(300, -120, 0))
+    self.button1:SetPosition(Vector(120, -120, 0))
     self.text1 = GetGUIManager():CreateTextItem()
     self.text1:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
     self.text1:SetTextAlignmentX(GUIItem.Align_Center)
@@ -65,7 +67,7 @@ function GUIExoEject:Initialize()
 
     self.button2 = GUICreateButtonIcon("Weapon2")
     self.button2:SetAnchor(GUIItem.Left, GUIItem.Bottom)
-    self.button2:SetPosition(Vector(360, -120, 0))
+    self.button2:SetPosition(Vector(180, -120, 0))
     self.text2 = GetGUIManager():CreateTextItem()
     self.text2:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
     self.text2:SetTextAlignmentX(GUIItem.Align_Center)
@@ -81,7 +83,7 @@ function GUIExoEject:Initialize()
 
     self.button3 = GUICreateButtonIcon("Weapon3")
     self.button3:SetAnchor(GUIItem.Left, GUIItem.Bottom)
-    self.button3:SetPosition(Vector(420, -120, 0))
+    self.button3:SetPosition(Vector(240, -120, 0))
     self.text3 = GetGUIManager():CreateTextItem()
     self.text3:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
     self.text3:SetTextAlignmentX(GUIItem.Align_Center)
@@ -96,7 +98,7 @@ function GUIExoEject:Initialize()
 
     self.button4 = GUICreateButtonIcon("Weapon4")
     self.button4:SetAnchor(GUIItem.Left, GUIItem.Bottom)
-    self.button4:SetPosition(Vector(480, -120, 0))
+    self.button4:SetPosition(Vector(300, -120, 0))
     self.text4 = GetGUIManager():CreateTextItem()
     self.text4:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
     self.text4:SetTextAlignmentX(GUIItem.Align_Center)
@@ -112,7 +114,7 @@ function GUIExoEject:Initialize()
 
     self.button5 = GUICreateButtonIcon("Weapon5")
     self.button5:SetAnchor(GUIItem.Left, GUIItem.Bottom)
-    self.button5:SetPosition(Vector(540, -120, 0))
+    self.button5:SetPosition(Vector(360, -120, 0))
 
     self.text5 = GetGUIManager():CreateTextItem()
     self.text5:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
@@ -126,21 +128,35 @@ function GUIExoEject:Initialize()
     self.text5:SetColor(kMarineFontColor)
     self.button5:AddChild(self.text5)
 
+    self.button = GUICreateButtonIcon("Drop")
+    self.button:SetAnchor(GUIItem.Left, GUIItem.Bottom)
+    self.button:SetPosition( GUIScale(Vector(430, -120, 0)))
 
-    self.centerText = GetGUIManager():CreateTextItem()
-    self.centerText:SetAnchor(GUIItem.Left, GUIItem.Bottom)
-    self.centerText:SetPosition(Vector(435,-140,0))
-    self.centerText:SetTextAlignmentX(GUIItem.Align_Center)
-    self.centerText:SetTextAlignmentY(GUIItem.Align_Max)
-    self.centerText:SetText("BoomBox Control")
-    self.centerText:SetScale(GetScaledVector())
-    self.centerText:SetFontName(kFontName)
-    GUIMakeFontScale(self.centerText)
-    self.centerText:SetColor(kMarineFontColor)
+    self.text = GetGUIManager():CreateTextItem()
+    self.text:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
+    self.text:SetTextAlignmentX(GUIItem.Align_Center)
+    self.text:SetTextAlignmentY(GUIItem.Align_Center)
+    self.text:SetText(Locale.ResolveString("EJECT_FROM_EXO"))
+    self.text:SetPosition(kTextOffset)
+    self.text:SetScale(GetScaledVector())
+    self.text:SetFontName(kFontName)
+    GUIMakeFontScale(self.text)
+    self.text:SetColor(kMarineFontColor)
+
+    self.button:AddChild(self.text)
+    self.button:SetIsVisible(false)
 end
 
 
 function GUIExoEject:Uninitialize()
+
+    if self.title then
+        GUI.DestroyItem(self.title)
+    end
+
+    if self.background then
+        GUI.DestroyItem(self.background)
+    end
 
     if self.button then
         GUI.DestroyItem(self.button)
@@ -165,9 +181,6 @@ function GUIExoEject:Uninitialize()
         GUI.DestroyItem(self.button5)
     end
 
-    if self.centerText then
-        GUI.DestroyItem(self.centerText)
-    end
 end
 
 function GUIExoEject:Update(deltaTime)
