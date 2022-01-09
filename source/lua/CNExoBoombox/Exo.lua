@@ -2,13 +2,13 @@
 local ost = {
   PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/2077"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/COD"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/GTAV"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/HL2"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/HLA"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/HALO"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/GTAIV"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/AWDR"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/GTAV"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/COD"),
 }
 
 local SONG =
@@ -16,10 +16,11 @@ local SONG =
     PrecacheAsset("sound/CNBoomBox.fev/SONG/LowRider"),
     PrecacheAsset("sound/CNBoomBox.fev/SONG/HowYouLikeMeNow"),
     PrecacheAsset("sound/CNBoomBox.fev/SONG/GreenRiver"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/HoldOnToMe"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/SadRobot"),
     PrecacheAsset("sound/CNBoomBox.fev/SONG/AfterTheDisco"),
     PrecacheAsset("sound/CNBoomBox.fev/SONG/TheSetup"),
     PrecacheAsset("sound/CNBoomBox.fev/SONG/PolishGirl"),
+    PrecacheAsset("sound/CNBoomBox.fev/SONG/HoldOnToMe"),
     PrecacheAsset("sound/CNBoomBox.fev/SONG/CaughtInADaze"),
     PrecacheAsset("sound/CNBoomBox.fev/SONG/Valkyrie"),
 }
@@ -38,9 +39,13 @@ local TwoDimension =
 
 local Otto =
 {
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Kirby"),
     PrecacheAsset("sound/CNBoomBox.fev/OTTO/Nobody"),
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Break"),
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Tremor"),
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/TimeBreaker"),
     PrecacheAsset("sound/CNBoomBox.fev/OTTO/Night"),
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Lynx"),
+    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Byte"),
     PrecacheAsset("sound/CNBoomBox.fev/OTTO/Reflection"),
     PrecacheAsset("sound/CNBoomBox.fev/OTTO/War"),
 }
@@ -128,7 +133,7 @@ if Server then
               local exoMusicPlaying = Server.CreateEntity(SoundEffect.kMapName)
               exoMusicPlaying:SetAsset(self.selectedTrack[self.selectedTrackIndex])
               --exoMusicPlaying:SetOrigin(self:GetOrigin())
-              self.exoMusicVolume = 0.20
+              self.exoMusicVolume = 1
               exoMusicPlaying:SetVolume(self.exoMusicVolume)
               --self.exoMusicPlaying.assetLength = -1
               exoMusicPlaying:SetRelevancyDistance(Math.infinity)
