@@ -3,10 +3,12 @@ local ost = {
   PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/2077"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/GTAV"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/VortalCombat"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/HL2"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/HLA"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/HALO"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/GTAIV"),
+  PrecacheAsset("sound/CNBoomBox.fev/OST/CV"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/AWDR"),
   PrecacheAsset("sound/CNBoomBox.fev/OST/COD"),
 }
@@ -28,11 +30,14 @@ local SONG =
 local TwoDimension =
 {
     PrecacheAsset("sound/CNBoomBox.fev/TWO/DaMeDaNe"),
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/DevilmanOld"),
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/RageOfDust"),
     PrecacheAsset("sound/CNBoomBox.fev/TWO/LoveLoop"),
     PrecacheAsset("sound/CNBoomBox.fev/TWO/Monster"),
     PrecacheAsset("sound/CNBoomBox.fev/TWO/RGB"),
     PrecacheAsset("sound/CNBoomBox.fev/TWO/BlinBlin"),
     PrecacheAsset("sound/CNBoomBox.fev/TWO/OneMoreNight"),
+    PrecacheAsset("sound/CNBoomBox.fev/TWO/FreesiaLive"),
     PrecacheAsset("sound/CNBoomBox.fev/TWO/Night"),
     PrecacheAsset("sound/CNBoomBox.fev/TWO/Devilman"),
 }
