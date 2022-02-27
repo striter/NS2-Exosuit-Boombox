@@ -1,5 +1,7 @@
 /OST/EXO
 -1
+/OST/DL2
+-1
 /OST/HALO
 -1
 /OST/COD
@@ -50,8 +52,6 @@
 -1
 /TWO/Monster
 -1
-/TWO/RGB
--1=
 /TWO/Night
 -1
 /TWO/Devilman
@@ -62,11 +62,11 @@
 -1
 /TWO/DevilmanOld
 -1
+/TWO/BloodyStream
+-1
 /OTTO/Nobody
 -1
 /OTTO/TimeBreaker
--1
-/OTTO/Night
 -1
 /OTTO/Reflection
 -1

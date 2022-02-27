@@ -1,31 +1,22 @@
-23:30:55 c:\anthill_jobs\job510040\fmod4\tools\fmod_designer\src\eventform.ui.h:1529 HH: Add Simple Event
-23:30:58 c:\anthill_jobs\job510040\fmod4\tools\fmod_designer\src\eventform.ui.h:1983 CG: Paste Event
-23:31:02 ..\..\src\propertyeditor.cpp:1508 EM: Set Name
-23:31:05 c:\anthill_jobs\job510040\fmod4\tools\fmod_designer\src\eventform.ui.h:1983 CG: Paste Event
-23:31:15 ..\..\src\propertyeditor.cpp:1508 EM: Set Name
-23:31:17 c:\anthill_jobs\job510040\fmod4\tools\fmod_designer\src\eventform.ui.h:1983 CG: Paste Event
-23:31:22 ..\..\src\propertyeditor.cpp:1508 EM: Set Name
-23:31:24 ..\..\src\simpleeventcontroller.cpp:1310 IR: Remove Sounds from Playlist
-23:31:25 ..\..\src\simpleeventcontroller.cpp:1310 IR: Remove Sounds from Playlist
-23:31:26 ..\..\src\simpleeventcontroller.cpp:1310 IR: Remove Sounds from Playlist
-23:31:29 ..\..\src\simpleeventcontroller.cpp:1734 IS: Add Sound to Playlist
-23:31:33 ..\..\src\simpleeventcontroller.cpp:1734 IS: Add Sound to Playlist
-23:31:38 ..\..\src\simpleeventcontroller.cpp:1734 IS: Add Sound to Playlist
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
-23:32:54 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:16:51 c:\anthill_jobs\job510040\fmod4\tools\fmod_designer\src\eventform.ui.h:2202 CH: Delete Events/Event Groups/Event Categories
+16:16:55 c:\anthill_jobs\job510040\fmod4\tools\fmod_designer\src\eventform.ui.h:2202 CH: Delete Events/Event Groups/Event Categories
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:12 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:14 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:14 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:14 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:14 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
+16:17:14 ..\..\src\bulkeditorcontroller.cpp:192 IT: Set Volume
