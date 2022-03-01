@@ -1,14 +1,18 @@
 
 local networkVars =
 {
-    exoMusicId = "private entityid"
+    exoMusicId = "private entityid",
+    selectedTrack  = "integer",
+    selectedTrackIndex = "integer",
 }
 
 Shared.LinkClassToMap("Exosuit", Exosuit.kMapName, networkVars)
 
-function Exosuit:SetMusic(musicId)
-    if musicId ~= nil then
-        local musicEntity = Shared.GetEntity(musicId)
+function Exosuit:SetMusic(_musicId,_selectedTrack,_selectedTrackIndex)
+    self.selectedTrack = _selectedTrack
+    self.selectedTrackIndex = _selectedTrackIndex
+    if _musicId ~= nil then
+        local musicEntity = Shared.GetEntity(_musicId)
         if musicEntity then
             self.exoMusicId = musicEntity:GetId()
             self:SetRelevancyDistance(Math.infinity)
@@ -21,6 +25,8 @@ local oldOnDestroy = Exosuit.OnDestroy
 function Exosuit:OnDestroy()
     oldOnDestroy( self )
     
+    self.selectedTrack = 0
+    self.selectedTrackIndex = 0
     if self.exoMusicId then
         local musicEntity = Shared.GetEntity(self.exoMusicId)
         if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() and musicEntity.Stop then
@@ -69,8 +75,10 @@ if Server then
               exoPlayer:TransferParasite(self)
               
               if self.exoMusicId then
-                exoPlayer:SetMusic(self.exoMusicId)
+                exoPlayer:SetMusic(self.exoMusicId,self.selectedTrack,self.selectedTrackIndex)
                 self.exoMusicId = nil
+                self.selectedTrack = 0
+                self.selectedTrackIndex = 0
               end
               
               local newAngles = player:GetViewAngles()

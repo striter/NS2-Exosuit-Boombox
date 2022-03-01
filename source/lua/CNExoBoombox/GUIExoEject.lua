@@ -25,6 +25,7 @@ function GUIExoEject:OnResolutionChanged(oldX, oldY, newX, newY)
     self:Initialize()
 end
 
+
 local kBackgroundName=PrecacheAsset("ui/boomboxBG.dds")
 
 function GUIExoEject:Initialize()
@@ -188,7 +189,16 @@ function GUIExoEject:Update(deltaTime)
     PROFILE("GUIExoEject:Update")
 
     local player = Client.GetLocalPlayer()
-    local showEject = player ~= nil and Client.GetIsControllingPlayer() and player:GetCanEject() and not MainMenu_GetIsOpened()
-
-    self.button:SetIsVisible(showEject)
+    if player == nil or not Client.GetIsControllingPlayer() then
+        return
+    end
+    
+    local title 
+    if player.selectedTrack ~= 0 then
+        title = gExosuitBoomboxTracks[player.selectedTrack][player.selectedTrackIndex].name
+    else
+        title = Locale.ResolveString("BOOMBOX_TITLE")
+    end
+    self.title:SetText(title)
+    self.button:SetIsVisible(player:GetCanEject())
 end

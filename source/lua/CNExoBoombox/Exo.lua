@@ -1,69 +1,89 @@
 
-local ost = {
-  PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/DL2"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/2077"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/GTAV"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/VortalCombat"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/HL2"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/HLA"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/HALO"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/GTAIV"),
-  PrecacheAsset("sound/CNBoomBox.fev/OST/CV"),
+local OST = {
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"), name = "Exosuit" },
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/DL2"), name = "Empowering Yourself" },
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/2077"), name = "The Rebel Path" },
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/GTAV"), name = "No Happy Endings" },
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/VortalCombat"), name = "Vortal Combat" },
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/HL2"), name = "Triage At Dawn" },
+  { asset =  PrecacheAsset("sound/CNBoomBox.fev/OST/HLA"), name = "Gravity Perforation Detail" },
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/HALO"), name = "The Road" },
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/GTAIV"), name = "Soviet Connection" },
+  { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/CV"), name = "Heart of fire" },
 }
 
 local SONG =
 {
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/LowRider"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/HowYouLikeMeNow"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/GreenRiver"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/SadRobot"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/AfterTheDisco"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/TheSetup"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/PolishGirl"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/HoldOnToMe"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/CaughtInADaze"),
-    PrecacheAsset("sound/CNBoomBox.fev/SONG/Valkyrie"),
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/LowRider"), name = "Low Rider" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/HowYouLikeMeNow"), name = "How you like me now" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/GreenRiver"), name = "Green River" },
+    { asset =  PrecacheAsset("sound/CNBoomBox.fev/SONG/SadRobot"), name = "Sad Robot" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/AfterTheDisco"), name = "After the Disco" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/TheSetup"), name = "The Setup" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/PolishGirl"), name = "Polish Girl" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/HoldOnToMe"), name = "Hold On To Me" },
+    { asset =  PrecacheAsset("sound/CNBoomBox.fev/SONG/CaughtInADaze"), name = "Caught In A Daze" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Valkyrie"), name = "Valkrie" },
 }
 
 local TwoDimension =
 {
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/DaMeDaNe"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/BloodyStream"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/DevilmanOld"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/RageOfDust"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/LoveLoop"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/Monster"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/BlinBlin"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/OneMoreNight"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/FreesiaLive"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/Night"),
-    PrecacheAsset("sound/CNBoomBox.fev/TWO/Devilman"),
+    { asset =  PrecacheAsset("sound/CNBoomBox.fev/TWO/DaMeDaNe"), name = "Baka Mitai" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/BloodyStream"), name = "Bloody Stream" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/DevilmanOld"), name = "悪魔復活" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/RageOfDust"), name = "Rage Of Dust" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/LoveLoop"), name = "恋爱循环" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/Monster"), name = "怪物" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/BlinBlin"), name = "ピカピカなのん" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/OneMoreNight"), name = "One More Night" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/FreesiaLive"), name = "フリージア" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/Night"), name = "夜に駆ける" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/Devilman"), name = "Devilman No Uta" },
 }
 
 local Otto =
 {
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Kirby"),
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Nobody"),
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Tremor"),
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/TimeBreaker"),
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Lynx"),
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Byte"),
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/Reflection"),
-    PrecacheAsset("sound/CNBoomBox.fev/OTTO/War"),
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/OTTO/Kirby"), name = "吉吉先进国" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/OTTO/Nobody"), name = "全球百大DJ2021" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/OTTO/Tremor"), name = "全球百大DJ2022" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/OTTO/TimeBreaker"), name = "时间撕裂者" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/OTTO/Lynx"), name = "全球百大DJ2020" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/OTTO/Byte"), name = "全球百大DJ2023" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/OTTO/Reflection"), name = "Sakura Reflection" },
+    { asset = PrecacheAsset("sound/CNBoomBox.fev/OTTO/War"), name = "国玉的战争" },
+}
+
+gExosuitBoomboxTracks =
+{
+    [0] = nil,
+    [1] = OST,
+    [2] = SONG,
+    [3] = TwoDimension,
+    [4] = Otto,
 }
 
 local networkVars =
 {
     exoMusicId = "private entityid",
+    selectedTrack  = "integer",
+    selectedTrackIndex = "integer",
     --exoMusicVolume = "private float (0 to 1.2 by 0.01)"
 }
 
 Shared.LinkClassToMap("Exo", Exo.kMapName, networkVars, true)
 
-function Exo:SetMusic(musicId)
-    if musicId ~= nil then
-        local musicEntity = Shared.GetEntity(musicId)
+local baseOninitialized = Exo.OnInitialized
+function Exo:OnInitialized()
+    baseOninitialized(self)
+    self.selectedTrack = 0
+    self.selectedTrackIndex = 0
+end
+
+function Exo:SetMusic(_musicId,_selectedTrack,_selectedTrackIndex)
+    self.selectedTrack = _selectedTrack
+    self.selectedTrackIndex = _selectedTrackIndex
+    if _musicId ~= nil then
+        local musicEntity = Shared.GetEntity(_musicId)
         if musicEntity then
             self.exoMusicId = musicEntity:GetId()
             self:SetRelevancyDistance(Math.infinity)
@@ -74,25 +94,37 @@ end
 
 if Server then
 
-   function Exo:SelectTrack(track)
-      if not self.selectedTrackIndex then
-          self.selectedTrackIndex = 0
-      end
 
-      if track == nil  or (self.selectedTrack ~= nil and self.selectedTrack ~= track) then
-          self.selectedTrackIndex = 0
-      end
-      self.selectedTrack = track
+    function Exo:SelectTrack(track)
 
-      if self.selectedTrack ~= nil then
-        self.selectedTrackIndex = self.selectedTrackIndex + 1
-        if  self.selectedTrackIndex > #track then
-            self.selectedTrackIndex = 1
+        if track == 0  or  self.selectedTrack ~= track then
+            self.selectedTrackIndex = 0
         end
-      end
+        self.selectedTrack = track
+
+        if self.selectedTrack ~= 0 then
+            self.selectedTrackIndex = self.selectedTrackIndex + 1
+            local selectedTrack = gExosuitBoomboxTracks[self.selectedTrack]
+            if  self.selectedTrackIndex > #selectedTrack then
+                self.selectedTrackIndex = 1
+            end
+        end
     end
 
-    function Exo:ClearSound()
+    local oldOnDestroy = Exo.OnDestroy
+    function Exo:OnDestroy()
+        oldOnDestroy( self )
+    
+        self.selectedTrack = 0
+        self.selectedTrackIndex = 0
+    
+        if self.exoMusicId ~= nil then
+            local musicEntity = Shared.GetEntity(self.exoMusicId)
+            if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() and musicEntity.Stop then
+                musicEntity:Stop()
+            end
+            self.exoMusicId = nil
+        end
     end
 
     local originalHandleButtons = Exo.HandleButtons
@@ -113,28 +145,28 @@ if Server then
 
             //Do track selection
             if bit.band(input.commands,Move.Weapon1) ~= 0 then
-                self:SelectTrack(ost)
+                self:SelectTrack(1)
             end
 
             if bit.band(input.commands,Move.Weapon2) ~= 0 then
-                self:SelectTrack(SONG)
+                self:SelectTrack(2)
             end
 
             if bit.band(input.commands,Move.Weapon3) ~= 0 then
-                self:SelectTrack(TwoDimension)
+                self:SelectTrack(3)
             end
 
             if bit.band(input.commands,Move.Weapon4) ~= 0 then
-                self:SelectTrack(Otto)
+                self:SelectTrack(4)
             end
 
             if bit.band(input.commands,Move.Weapon5) ~= 0 then
-                self:SelectTrack(nil)
+                self:SelectTrack(0)
             end
 
-            if self.selectedTrack ~= nil then
+            if self.selectedTrack ~= 0 then
               local exoMusicPlaying = Server.CreateEntity(SoundEffect.kMapName)
-              exoMusicPlaying:SetAsset(self.selectedTrack[self.selectedTrackIndex])
+              exoMusicPlaying:SetAsset(gExosuitBoomboxTracks[self.selectedTrack][self.selectedTrackIndex].asset)
               --exoMusicPlaying:SetOrigin(self:GetOrigin())
               self.exoMusicVolume = 1
               exoMusicPlaying:SetVolume(self.exoMusicVolume)
@@ -177,7 +209,7 @@ if Server then
           exosuit:SetExoVariant(self:GetExoVariant())
           exosuit:SetFlashlightOn(self:GetFlashlightOn())
           exosuit:TransferParasite(self)
-          exosuit:SetMusic(self.exoMusicId)
+          exosuit:SetMusic(self.exoMusicId,self.selectedTrack,self.selectedTrackIndex)
           self.exoMusicId = nil
 
           local reuseWeapons = self.storedWeaponsIds ~= nil
@@ -222,18 +254,3 @@ if Server then
 end
 
 
-local oldOnDestroy = Exo.OnDestroy
-function Exo:OnDestroy()
-    oldOnDestroy( self )
-
-    self.selectedTrack=nil
-    self.selectedTrackIndex = 0
-
-    if self.exoMusicId ~= nil then
-        local musicEntity = Shared.GetEntity(self.exoMusicId)
-        if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() and musicEntity.Stop then
-            musicEntity:Stop()
-        end
-        self.exoMusicId = nil
-    end
-end
