@@ -1,43 +1,18 @@
 
-local networkVars =
-{
-    exoMusicId = "private entityid",
-    selectedTrack  = "integer",
-    selectedTrackIndex = "integer",
-}
-
-Shared.LinkClassToMap("Exosuit", Exosuit.kMapName, networkVars)
-
-function Exosuit:SetMusic(_musicId,_selectedTrack,_selectedTrackIndex)
-    self.selectedTrack = _selectedTrack
-    self.selectedTrackIndex = _selectedTrackIndex
-    if _musicId ~= nil then
-        local musicEntity = Shared.GetEntity(_musicId)
-        if musicEntity then
-            self.exoMusicId = musicEntity:GetId()
-            self:SetRelevancyDistance(Math.infinity)
-            musicEntity:SetParent(self)
-        end
-    end
-end
-
-local oldOnDestroy = Exosuit.OnDestroy
-function Exosuit:OnDestroy()
-    oldOnDestroy( self )
-    
-    self.selectedTrack = 0
-    self.selectedTrackIndex = 0
-    if self.exoMusicId then
-        local musicEntity = Shared.GetEntity(self.exoMusicId)
-        if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() and musicEntity.Stop then
-            musicEntity:Stop()
-        end
-        self.exoMusicId = nil
-    end
+Script.Load("lua/CNExoBoomBox/BoomBoxMixin.lua")
+Shared.LinkClassToMap("Exosuit", Exosuit.kMapName, BoomBoxMixin.networkVars)
+local baseOninitialized = Exosuit.OnInitialized
+function Exosuit:OnInitialized()
+    baseOninitialized(self)
+    InitMixin(self,BoomBoxMixin)
 end
 
 if Server then
-
+    local baseOnKill = Exosuit.OnKill
+    function Exosuit:OnKill()
+        baseOnKill(self)
+        self:DestroyMusic()
+    end
     
     function Exosuit:OnUseDeferred()
         
@@ -73,14 +48,11 @@ if Server then
               exoPlayer:SetArmor(self:GetArmor())
               exoPlayer:SetFlashlightOn(self:GetFlashlightOn())
               exoPlayer:TransferParasite(self)
-              
-              if self.exoMusicId then
-                exoPlayer:SetMusic(self.exoMusicId,self.selectedTrack,self.selectedTrackIndex)
-                self.exoMusicId = nil
-                self.selectedTrack = 0
-                self.selectedTrackIndex = 0
-              end
-              
+
+            ------------------
+              exoPlayer:TransferMusic(self)
+            ----------------
+
               local newAngles = player:GetViewAngles()
               newAngles.pitch = 0
               newAngles.roll = 0

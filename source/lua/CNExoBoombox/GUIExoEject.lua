@@ -104,14 +104,13 @@ function GUIExoEject:Initialize()
     self.text4:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
     self.text4:SetTextAlignmentX(GUIItem.Align_Center)
     self.text4:SetTextAlignmentY(GUIItem.Align_Center)
-    self.text4:SetText(Locale.ResolveString("BOOMBOX_REMIX"))
+    self.text4:SetText(Locale.ResolveString("BOOMBOX_CUSTOM"))
     self.text4:SetPosition(kTextOffset)
     self.text4:SetScale(GetScaledVector())
     self.text4:SetFontName(kFontName)
     GUIMakeFontScale(self.text4)
     self.text4:SetColor(kMarineFontColor)
     self.button4:AddChild(self.text4)
-
 
     self.button5 = GUICreateButtonIcon("Weapon5")
     self.button5:SetAnchor(GUIItem.Left, GUIItem.Bottom)
@@ -121,7 +120,7 @@ function GUIExoEject:Initialize()
     self.text5:SetAnchor(GUIItem.Middle, GUIItem.Bottom)
     self.text5:SetTextAlignmentX(GUIItem.Align_Center)
     self.text5:SetTextAlignmentY(GUIItem.Align_Center)
-    self.text5:SetText(Locale.ResolveString("BOOMBOX_STOP"))
+    self.text5:SetText(Locale.ResolveString("BOOMBOX_VOLUME"))
     self.text5:SetPosition(kTextOffset)
     self.text5:SetScale(GetScaledVector())
     self.text5:SetFontName(kFontName)
@@ -193,12 +192,6 @@ function GUIExoEject:Update(deltaTime)
         return
     end
     
-    local title 
-    if player.selectedTrack ~= 0 then
-        title = gExosuitBoomboxTracks[player.selectedTrack][player.selectedTrackIndex].name
-    else
-        title = Locale.ResolveString("BOOMBOX_TITLE")
-    end
-    self.title:SetText(title)
+    self.title:SetText(player:GetBoomBoxTitle())
     self.button:SetIsVisible(player:GetCanEject())
 end
