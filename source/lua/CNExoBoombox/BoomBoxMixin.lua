@@ -14,25 +14,22 @@ BoomBoxMixin.gTrackEnum =enum{
     'SONG',
     'TwoDimension',
     'Custom',
---     'Onos',
+    --     'Onos',
 }
 
 local kTrackAssets = {
     [BoomBoxMixin.gTrackEnum.OST]  = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"), name = "Exosuit" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/FFIV1"), name = "エスケープ" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/FFIV2"), name = "震える刃" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/RisingTide"), name = "Rising Tide" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/MMRoute99"), name = "ルート 99" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/MMFight"), name = "激闘" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/DL2"), name = "Empowering Yourself" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/RDR"), name = "Red Dead Redemption" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/HLA"), name = "Gravity Perforation Detail" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/2077"), name = "The Rebel Path" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/GTAV"), name = "No Happy Endings" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/VortalCombat"), name = "Vortal Combat" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/HL2"), name = "Triage At Dawn" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/HLA"), name = "Gravity Perforation Detail" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/HALO"), name = "The Road" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/GTAIV"), name = "Soviet Connection" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/CV"), name = "Heart of fire" },
-        },
+    },
     [BoomBoxMixin.gTrackEnum.SONG]  =   {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/LowRider"), name = "Low Rider" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/HowYouLikeMeNow"), name = "How you like me now" },
@@ -60,19 +57,23 @@ local kTrackAssets = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/FreesiaLive"), name = "フリージア" },
     },
     [BoomBoxMixin.gTrackEnum.Custom]  =  {
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/ClearMorning"), name = "Clear Morning" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/LetBulletFly"), name = "让子弹飞-敢杀我的马？！" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/InHellWeLive"), name = "In Hell We Live, Lament" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/SpinTheSnow"), name = "回レ! 雪月花" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/Summoning101"), name = "Summoning 101" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/KazeWoAtsumete"), name = "Kaze Wo Atsumete" },
     }
---     [BoomBoxMixin.gTrackEnum.Onos]  =  {
---         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/L4D2"), name = "Taank" },
---         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/BM"), name = "Surface Tension 2" },
---         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/GTAV"), name = "Minor Turbulence" },
---         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/KF2"), name = "We don't care" },
---         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/SS4"), name = "Boss Fight String" },
---     }
+    --     [BoomBoxMixin.gTrackEnum.Onos]  =  {
+    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/L4D2"), name = "Taank" },
+    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/BM"), name = "Surface Tension 2" },
+    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/GTAV"), name = "Minor Turbulence" },
+    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/KF2"), name = "We don't care" },
+    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/SS4"), name = "Boss Fight String" },
+    --     }
 }
 
-    
+
 BoomBoxMixin.kStartVolume = 4
 BoomBoxMixin.kVolumeSwitch = {
     [1]=0,
@@ -91,6 +92,7 @@ function BoomBoxMixin:__initmixin()
     self.selectedTrack = BoomBoxMixin.gTrackEnum.OST
     self.selectedTrackIndex = 1
     self.volume = BoomBoxMixin.kStartVolume
+    self.musicId = Entity.invalidId
 end
 
 function BoomBoxMixin:GetBoomBoxTitle()
@@ -117,7 +119,7 @@ if Server then
         if self.selectedTrack ~= _trackIndex then
             self.selectedTrackIndex = 0
         end
-        
+
         self.selectedTrack = _trackIndex
         self.selectedTrackIndex = self.selectedTrackIndex + 1
         if  self.selectedTrackIndex > #kTrackAssets[self.selectedTrack] then
@@ -142,25 +144,25 @@ if Server then
         self.selectedTrack = _from.selectedTrack
         self.selectedTrackIndex = _from.selectedTrackIndex
         self.volume = _from.volume
-        if _from.musicId ~= nil then
+        if _from.musicId ~= Entity.invalidId then
             local musicEntity = Shared.GetEntity(_from.musicId)
-            if musicEntity then
+            if musicEntity and musicEntity.GetIsPlaying then
                 self.musicId = musicEntity:GetId()
                 self:SetRelevancyDistance(Math.infinity)
                 musicEntity:SetParent(self)
             end
 
-            _from.musicId = nil
+            _from.musicId = Entity.invalidId
         end
     end
 
     function BoomBoxMixin:DestroyMusic()
-        if self.musicId ~= nil then
+        if self.musicId ~= Entity.invalidId then
             local musicEntity = Shared.GetEntity(self.musicId)
             if musicEntity and musicEntity.GetIsPlaying and musicEntity:GetIsPlaying() and musicEntity.Stop then
                 musicEntity:Stop()
             end
-            self.musicId = nil
+            self.musicId = Entity.invalidId
         end
     end
 

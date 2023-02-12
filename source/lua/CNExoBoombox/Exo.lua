@@ -62,7 +62,16 @@ if Server then
           exosuit:TransferParasite(self)
 -------------------
           exosuit:TransferMusic(self)
----------------------
+--------------------
+
+          -- Set the auto-weld cooldown of the dropped exo to match the cooldown if we weren't
+          -- ejecting just now.
+          local combatTimeEnd = math.max(self:GetTimeLastDamageDealt(), self:GetTimeLastDamageTaken()) + kCombatTimeOut
+          local cooldownEnd = math.max(self.timeNextWeld, combatTimeEnd)
+          local now = Shared.GetTime()
+          local combatTimeRemaining = math.max(0, cooldownEnd - now)
+          exosuit.timeNextWeld = now + combatTimeRemaining
+          
           local reuseWeapons = self.storedWeaponsIds ~= nil
 
           local marine = self:Replace(self.prevPlayerMapName or Marine.kMapName, self:GetTeamNumber(), false, self:GetOrigin() + Vector(0, 0.2, 0), { preventWeapons = reuseWeapons })

@@ -48,11 +48,19 @@ if Server then
               exoPlayer:SetArmor(self:GetArmor())
               exoPlayer:SetFlashlightOn(self:GetFlashlightOn())
               exoPlayer:TransferParasite(self)
-
             ------------------
               exoPlayer:TransferMusic(self)
             ----------------
 
+              -- Set the auto-weld cooldown of the player exo to match the cooldown of the dropped
+              -- exo.
+              local now = Shared.GetTime()
+              local timeLastDamage = self:GetTimeOfLastDamage() or 0
+              local waitEnd = timeLastDamage + kCombatTimeOut
+              local cooldownEnd = math.max(waitEnd, self.timeNextWeld)
+              local cooldownRemaining = math.max(0, cooldownEnd - now)
+              exoPlayer.timeNextWeld = now + cooldownRemaining
+              
               local newAngles = player:GetViewAngles()
               newAngles.pitch = 0
               newAngles.roll = 0
@@ -60,8 +68,8 @@ if Server then
               exoPlayer:SetOffsetAngles(newAngles)
               -- the coords of this entity are the same as the players coords when he left the exo, so reuse these coords to prevent getting stuck
               exoPlayer:SetCoords(self:GetCoords())
-              
-              self:TriggerEffects("pickup")
+
+              player:TriggerEffects("pickup", { effectshostcoords = self:GetCoords() })
               DestroyEntity(self)
               
           end
