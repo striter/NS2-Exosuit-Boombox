@@ -21,7 +21,7 @@ local kTrackAssets = {
     [BoomBoxMixin.gTrackEnum.OST]  = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"), name = "Exosuit" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/FFIV1"), name = "エスケープ" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/FFIV2"), name = "震える刃" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/FFIV2"), name = "天つ風" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/RisingTide"), name = "Rising Tide" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/MMRoute99"), name = "ルート 99" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/MMFight"), name = "激闘" },
