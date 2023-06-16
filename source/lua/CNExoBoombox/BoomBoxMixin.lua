@@ -14,7 +14,6 @@ BoomBoxMixin.gTrackEnum =enum{
     'SONG',
     'TwoDimension',
     'Custom',
-    --     'Onos',
 }
 
 local kTrackAssets = {
@@ -33,16 +32,14 @@ local kTrackAssets = {
     [BoomBoxMixin.gTrackEnum.SONG]  =   {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/LowRider"), name = "Low Rider" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/HowYouLikeMeNow"), name = "How you like me now" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/LetYouDown"), name = "Let You Down" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/WestCoast"), name = "West Coast" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/HealthFood"), name = "Health Food" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Wildin"), name = "Wild'in" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Vowels"), name = "Vowels" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Easy"), name = "Easy" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/GreenRiver"), name = "Green River" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/AfterTheDisco"), name = "After the Disco" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/TheSetup"), name = "The Setup" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/PolishGirl"), name = "Polish Girl" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/HoldOnToMe"), name = "Hold On To Me" },
-        { asset =  PrecacheAsset("sound/CNBoomBox.fev/SONG/CaughtInADaze"), name = "Caught In A Daze" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/CaughtInADaze"), name = "Caught In A Daze" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Valkyrie"), name = "Valkrie" },
     },
     [BoomBoxMixin.gTrackEnum.TwoDimension]  =  {
@@ -57,6 +54,8 @@ local kTrackAssets = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/FreesiaLive"), name = "フリージア" },
     },
     [BoomBoxMixin.gTrackEnum.Custom]  =  {
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/Youngthink"), name = "ヰ世界の宝石譚" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/SonOfTheGround"), name = "大地之子-沙林mix" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/ClearMorning"), name = "Clear Morning" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/LetBulletFly"), name = "让子弹飞-敢杀我的马？！" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/InHellWeLive"), name = "In Hell We Live, Lament" },
@@ -64,15 +63,7 @@ local kTrackAssets = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/Summoning101"), name = "Summoning 101" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/KazeWoAtsumete"), name = "Kaze Wo Atsumete" },
     }
-    --     [BoomBoxMixin.gTrackEnum.Onos]  =  {
-    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/L4D2"), name = "Taank" },
-    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/BM"), name = "Surface Tension 2" },
-    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/GTAV"), name = "Minor Turbulence" },
-    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/KF2"), name = "We don't care" },
-    --         { asset = PrecacheAsset("sound/CNBoomBox.fev/ONOS/SS4"), name = "Boss Fight String" },
-    --     }
 }
-
 
 BoomBoxMixin.kStartVolume = 4
 BoomBoxMixin.kVolumeSwitch = {
