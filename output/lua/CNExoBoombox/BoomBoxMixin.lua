@@ -20,8 +20,6 @@ local kTrackAssets = {
     [BoomBoxMixin.gTrackEnum.OST]  = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"), name = "Exosuit" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/PTSD"), name = "PTSD" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/FFIV1"), name = "エスケープ" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/FFIV2"), name = "天つ風" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/RisingTide"), name = "Rising Tide" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/MMFight"), name = "激闘" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/HLA"), name = "Gravity Perforation Detail" },
@@ -44,6 +42,7 @@ local kTrackAssets = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Valkyrie"), name = "Valkrie" },
     },
     [BoomBoxMixin.gTrackEnum.TwoDimension]  =  {
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/StepIt"), name = "Step It" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/Hear"), name = "聴きたかったダンスミュージック、リキッドルームに" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/DaMeDaNe"), name = "Baka Mitai" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/BloodyStream"), name = "Bloody Stream" },
@@ -55,12 +54,13 @@ local kTrackAssets = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/FreesiaLive"), name = "フリージア" },
     },
     [BoomBoxMixin.gTrackEnum.Custom]  =  {
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/LOTUS"), name = "美丽的神话" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/OldFashionLove"), name = "Old Fashioned Love" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/ygkldnh"), name = "阳光开朗大男孩" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/DD2"), name = "The Decisive Combat" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/Youngthink"), name = "ヰ世界の宝石譚" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/SonOfTheGround"), name = "大地之子-沙林mix" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/ClearMorning"), name = "Clear Morning" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/LetBulletFly"), name = "让子弹飞-敢杀我的马？！" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/InHellWeLive"), name = "In Hell We Live, Lament" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/SpinTheSnow"), name = "回レ! 雪月花" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/Summoning101"), name = "Summoning 101" },
