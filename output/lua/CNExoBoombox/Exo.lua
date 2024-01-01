@@ -24,11 +24,11 @@ if Server then
 
             -- Do track selection
             if bit.band(input.commands,Move.Weapon1) ~= 0 then
-                self:SwitchTrack(BoomBoxMixin.gTrackEnum.OST)
+                self:SwitchTrack(BoomBoxMixin.gTrackEnum.Custom)
             end
 
             if bit.band(input.commands,Move.Weapon2) ~= 0 then
-                self:SwitchTrack(BoomBoxMixin.gTrackEnum.SONG)
+                self:SwitchTrack(BoomBoxMixin.gTrackEnum.OST)
             end
 
             if bit.band(input.commands,Move.Weapon3) ~= 0 then
@@ -36,7 +36,7 @@ if Server then
             end
 
             if bit.band(input.commands,Move.Weapon4) ~= 0 then
-                self:SwitchTrack(BoomBoxMixin.gTrackEnum.Custom)
+                self:SwitchTrack(BoomBoxMixin.gTrackEnum.SONG)
             end
 
             if bit.band(input.commands,Move.Weapon5) ~= 0 then
