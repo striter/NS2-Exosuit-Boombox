@@ -18,6 +18,8 @@ BoomBoxMixin.gTrackEnum =enum{
 
 local kTrackAssets = {
     [BoomBoxMixin.gTrackEnum.Custom]  =  {
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/gxfc"), name = "恭喜发财" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/cjdl"), name = "不眠之夜" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/ygkldnh"), name = "阳光开朗大男孩" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/Girl"), name = "恋爱困难女孩" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/LOTUS"), name = "美丽的神话" },
@@ -55,6 +57,7 @@ local kTrackAssets = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/TWO/FreesiaLive"), name = "フリージア" },
     },
     [BoomBoxMixin.gTrackEnum.SONG] = {
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Slumlord"), name = "Slumlord" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/BadHabit"), name = "Bad Habit" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/FreeBird"), name = "Free Bird" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Sabotage"), name = "Sabotage" },
@@ -102,7 +105,9 @@ end
 
 if Server then
     local function Play(self)
-        if self.volume == 1 then return end
+        if self.volume == 1 
+            or self.selectedTrackIndex <= 0
+        then return end
 
         local tracks = kTrackAssets[self.selectedTrack]
         local music = StartSoundEffectOnEntity(tracks[self.selectedTrackIndex].asset,self, GetVolume(self))
