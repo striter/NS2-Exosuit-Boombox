@@ -18,6 +18,7 @@ BoomBoxMixin.gTrackEnum =enum{
 
 local kTrackAssets = {
     [BoomBoxMixin.gTrackEnum.Custom]  =  {
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/zxmzf"), name = "最炫民族风" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/cjdl"), name = "不眠之夜" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/ygkldnh"), name = "阳光开朗大男孩" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/Girl"), name = "恋爱困难女孩" },
@@ -31,6 +32,7 @@ local kTrackAssets = {
     },
     [BoomBoxMixin.gTrackEnum.OST]  = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/2077"), name = "The Rebel Path" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/DiveIntoTheVoid"), name = "Dive Into The Void" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/PTSD"), name = "PTSD" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/RisingTide"), name = "Rising Tide" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/Castlevania"), name = "狂月の招き" },
@@ -39,7 +41,6 @@ local kTrackAssets = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/GTAV"), name = "No Happy Endings" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/VortalCombat"), name = "Vortal Combat" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/OST/EXO"), name = "Exosuit" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/CUSTOM/DD2"), name = "The Decisive Combat" },
         
     },
     [BoomBoxMixin.gTrackEnum.TwoDimension] = {
@@ -57,16 +58,15 @@ local kTrackAssets = {
     },
     [BoomBoxMixin.gTrackEnum.SONG] = {
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Slumlord"), name = "Slumlord" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/BetterCallSaul"), name = "Better Call Saul" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/BadHabit"), name = "Bad Habit" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/HideAway"), name = "Hide Away" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/FreeBird"), name = "Free Bird" },
-        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Sabotage"), name = "Sabotage" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/HowYouLikeMeNow"), name = "How you like me now" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/TheFeelings"), name = "The Feelings" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/WestCoast"), name = "West Coast" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/GreenRiver"), name = "Green River" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/AfterTheDisco"), name = "After the Disco" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/TheSetup"), name = "The Setup" },
+        { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/WashingMachine"), name = "Washing Machine" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/PolishGirl"), name = "Polish Girl" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/Valkyrie"), name = "Valkyrie" },
         { asset = PrecacheAsset("sound/CNBoomBox.fev/SONG/VirtualInsanity"), name = "Virtual Insanity" },
